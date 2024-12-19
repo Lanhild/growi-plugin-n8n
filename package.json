@@ -22,8 +22,8 @@
     "prepare": "husky && git config --local core.editor cat"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-innertext": "^1.1.5"
   },
   "devDependencies": {

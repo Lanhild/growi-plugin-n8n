@@ -1,56 +1,60 @@
-# GROIW Plugin template for script
+# GROWI plugin n8n
 
-This is a template for creating a GROWI script plugin.
+This repository contains a [GROWI](https://github.com/weseek/growi) plugin to preview n8n workflows.
+
+## Getting Started
+
+1. Clone this repository
+2. Create a new branch
+
+```bash
+git checkout -b MY_BRANCH_NAME
+```
+
+3. Install the project dependencies
+
+```bash
+npm install
+```
+
+4. Test your build
+
+```bash
+npm run build
+```
+
+5. Commit your changes
+6. Open a pull request
+
+### Commits & Releases
+
+#### Committing
+
+Commits format is enforced using [Commitizen](https://github.com/commitizen/cz-cli) and follows the [AngularJS commit standard](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#type).
+
+This allows for [easier automated releases](#automated-releases)
+
+#### Automated Releases
+
+Releases and packages version changes are all automated using [semantic-release](https://semantic-release.gitbook.io/semantic-release).
+
+Its configuration is available in the `.releaserc.json` file.
+
+Make sure that the `TOKEN` action secret is configured and has access to this repository.
 
 ## Usage
 
-### Download or folk this repository.
+In the GROWI editor, add a code block with your n8n workflow code:
 
-```bash
-git clone git@github.com:goofmint/growi-plugin-script-template.git
 ```
-
-### Change the name of the plugin in package.json.
-
-```js
+```n8n
 {
-  "name": "growi-plugin-script-template",  // Change this name
-  "version": "1.0.0",
-  "description": "GROWI plugin template for script", // Change this description
-	:
+  // Parameters defined in n8nView
+  "frame": true,
+  "nodes": [
+    ...
+  ]
 }
 ```
 
-### Edit those files
-
-Of course, you can add or remove files as you like.
-
-- client-entry.tsx
-- src/Hello.tsx
-- src/Hello.css
-- src/Demo.tsx
-
-### Preview the plugin
-
-```bash
-yarn dev
-```
-
-### Build the plugin
-
-```bash
-yarn build
-```
-
-## Publish the plugin at GROWI
-
-Add a topic `growi-plugin` on your GitHub repository.
-
-Then, you can see your plugin on the GROWI plugin list page below.
-
-https://growi.org/plugins
-
-## License
-
-MIT
-
+![alt text](image.png)
