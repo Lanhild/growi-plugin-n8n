@@ -1,0 +1,11 @@
+{
+  "client-entry.tsx": {
+    "file": "assets/client-entry-Dxwaac21.js",
+    "name": "client-entry",
+    "src": "client-entry.tsx",
+    "isEntry": true,
+    "css": [
+      "assets/client-entry-B4E4u9K_.css"
+    ]
+  }
+}
